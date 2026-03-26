@@ -2,14 +2,14 @@ import streamlit as st
 import pandas as pd
 import pickle
 
-loaded_model = pickle.load(open(r"D:\AFTER NEET\trained_model.sav", 'rb'))
-standardised = pickle.load(open(r"D:\AFTER NEET\standardised.sav", 'rb'))
+loaded_model = pickle.load(open("trained_model.sav", "rb"))
+standardised = pickle.load(open("standardised.sav", "rb"))
 
-loaded_diabet_model = pickle.load(open(r"D:\AFTER NEET\trained_diabet_model.sav", 'rb'))
-Standardised_diabet = pickle.load(open(r"D:\AFTER NEET\trained_diabet_scalar.sav", 'rb'))
+loaded_diabet_model = pickle.load(open("trained_diabet_model.sav", "rb"))
+Standardised_diabet = pickle.load(open("trained_diabet_scalar.sav", "rb"))
 
-loaded_cancer_model = pickle.load(open(r"D:\AFTER NEET\breast_cancer_model.sav" , 'rb'))
-standardised_canc = pickle.load(open(r"D:\AFTER NEET\breast_cancer_scalar.sav", 'rb'))
+loaded_cancer_model = pickle.load(open("breast_cancer_model.sav", "rb"))
+standardised_canc = pickle.load(open("breast_cancer_scalar.sav", "rb"))
 
 
 def calories_prediction(input_data):
